@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+  --color-base-100: 255 255 255;
+  --color-base-content: 0 0 0;
+
+  --color-primary: 0 0 0;
+  --color-primary-content: 255 255 255;
+}
+
+:root[class~="dark"] {
+  --color-base-100: 0 0 0;
+  --color-base-content: 255 255 255;
+
+  --color-primary: 255 255 255;
+  --color-primary-content: 0 0 0;
+}
+@layer components {
+  .container-wide {
+    @apply w-full max-w-[1110px] mx-auto max-lg:px-[24px];
+  }
+  .social-icon {
+    @apply group-hover:fill-primary-focus fill-base-100 transition-all duration-300;
+  }
+}
+@layer utilities {
+  .flex-col-center {
+    @apply flex flex-col items-center;
+  }
+  .transition-universal {
+    @apply transition-all duration-300;
+  }
+  .hover-primary {
+    @apply hover:fill-primary hover:text-primary transition-all duration-300;
+  }
+  .primary-gradient {
+    @apply bg-gradient-to-br from-primary to-primary-200;
+  }
+  .primary-gradient-hover {
+    @apply bg-gradient-to-br from-primary/40 to-primary-200/40;
+  }
+  .test-border {
+    @apply border-[1px] border-red-500;
+  }
+}
