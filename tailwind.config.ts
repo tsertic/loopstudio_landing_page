@@ -28,6 +28,8 @@ const config: Config = {
         headingXLMobile: ["40px", { fontWeight: "300", lineHeight: "38px" }],
         headingL: ["48px", { lineHeight: "100%", fontWeight: "300" }],
         headingLMobile: ["32px", { lineHeight: "100%", fontWeight: "300" }],
+        headingM: ["32px", { lineHeight: "100%", fontWeight: "300" }],
+        headingMMobile: ["24px", { lineHeight: "100%", fontWeight: "300" }],
       },
       boxShadow: {
         button: "0 15px 15px -10px #FF9F8E",
