@@ -1,5 +1,7 @@
 import { Icons } from "@/components/UI/Icons";
 import { Logo } from "@/components/UI/Logo";
+import { NAV_LINKS } from "@/constants";
+import Link from "next/link";
 import React from "react";
 interface IMobileModal {
   closeModal: () => void;
@@ -15,16 +17,28 @@ export const MobileModal: React.FC<IMobileModal> = ({
         showModal ? "opacity-100 z-40 " : "opacity-0 z-[-20]"
       } fixed left-0 h-screen w-screen bg-primary  transition-all duration-300`}
     >
-      <div className="absolute top-[40px] container-wide flex justify-between items-center ">
-        <Logo width={192} height={32} fill="primary-content" />
+      <div className="absolute top-[40px] container-wide flex justify-between z-40 items-center  ">
+        <Logo width={192} height={32} dark={false} />
         <div onClick={closeModal} className="cursor-pointer">
           {" "}
-          <Icons
-            iconName="close"
-            className="w-[20px] h-[20px] fill-primary-content"
-          />
+          <Icons iconName="close" className="w-[20px] h-[20px] fill-base-100" />
         </div>
       </div>
+      <nav className=" h-full pl-[24px] flex flex-col  items-start justify-center gap-[24px]">
+        {NAV_LINKS.map((link) => {
+          return (
+            <Link
+              href={link.path}
+              aria-label={link.ariaLabel}
+              onClick={closeModal}
+              key={link._id}
+              className="text-navMobile text-primary-content uppercase font-josefinsans "
+            >
+              {link.text}
+            </Link>
+          );
+        })}
+      </nav>
     </div>
   );
 };
