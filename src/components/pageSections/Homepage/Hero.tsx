@@ -16,7 +16,7 @@ export const Hero = () => {
         <Image
           src="/images/desktop/image-hero.jpg"
           width={1440}
-          height={850}
+          height={650}
           alt="hero image"
           className="w-full h-full"
         />
