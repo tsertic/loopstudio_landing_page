@@ -35,7 +35,7 @@ Users should be able to:
 ![](./speedtest.png)
 
 Note:
-On mobile size result in performance drop to 86, room for improvement and optimization for sure
+Achieved a score of 95/100 in Best Practices because the aspect ratios of card images are 256px wide in their original form, whereas in the design, they are 254px wide (254 x 450, 0.56 - 256 x 450, 0.57). For this practice project, I didn't find it necessary to adjust the width of every image to achieve pixel-perfect aspect ratio alignment.
 
 ### Links
 
@@ -48,7 +48,6 @@ On mobile size result in performance drop to 86, room for improvement and optimi
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [Typescropt](https://www.typescriptlang.org/) - Typescript
 - [Next.js](https://nextjs.org/) - React framework
