@@ -16,7 +16,7 @@ export const Creations = () => {
           return <CreationCard cardData={cardData} key={cardData._id} />;
         })}
       </div>
-      <div className="md:absolute md:right-0 md:top-0 w-full text-center">
+      <div className="md:absolute md:right-0 md:top-0 md:w-fit text-center ">
         <Button href="#" ariaLabel="see all creations">
           see all
         </Button>

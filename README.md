@@ -39,7 +39,7 @@ On mobile size result in performance drop to 86, room for improvement and optimi
 
 ### Links
 
-- Live Site URL: [Live Site](https://where-in-the-world-drab.vercel.app/)
+- Live Site URL: [Live Site](https://loopstudios-landing-page-eight-delta.vercel.app/)
 
 ## My process
 
@@ -52,29 +52,23 @@ On mobile size result in performance drop to 86, room for improvement and optimi
 - Mobile-first workflow
 - [Typescropt](https://www.typescriptlang.org/) - Typescript
 - [Next.js](https://nextjs.org/) - React framework
-- [Redux-Toolkit](https://redux-toolkit.js.org/) - redux-toolkit
 - [Tailwind CSS](https://tailwindcss.com/) - For styles
-- [Framer Motion](https://www.framer.com/motion/) - Smooth layout animation when filtering data
-- [Rest Countries API](https://restcountries.com/)- Api that provide countries data
 
 ### What I learned
 
-Learned how to implement infinite scroll for better UI/UX experience and performance.
-I have improved my skills in animating elements that are added or removed in layout grid, as well as in optimizing performance. Since the API used doesn't deliver data in chunks but all at once, implementing lazy loading, suspense, and displaying initial data before the entire set is loaded becomes necessary for optimal performance.
+An excellent exercise in creating a responsive landing page from a Figma design.
 
 ### Continued development
 
-Improve filter by adding population range , filter by currency etc.
+Add other pages apart from landing.
 
 ### Useful resources
 
 - [Tailwind docs](https://tailwindcss.com/docs/) - Always useful when working with tailwind.
-- [Framer Motion docs](https://www.framer.com/motion/) - Great library and nice documented
 
 ## Design/Project
 
-This is a solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
--->
+This is a solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Author
 
