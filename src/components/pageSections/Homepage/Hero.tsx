@@ -22,7 +22,7 @@ export const Hero = () => {
         />
       </div>
       <div className="container-wide">
-        <div className="p-[24px] md:p-[40px] md:pb-[28px] border-[2px] border-white text-white w-full md:max-w-[650px] ">
+        <div className="p-[24px] md:p-[40px] md:pb-[26px] border-[2px] border-white text-white w-full md:max-w-[650px] ">
           <h1 className=" text-headingXLMobile md:text-headingXL uppercase  ">
             Immersive
             <br />
