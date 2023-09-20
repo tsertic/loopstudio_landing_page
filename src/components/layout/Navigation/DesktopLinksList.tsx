@@ -11,7 +11,7 @@ export const DesktopLinksList = () => {
             href={link.path}
             aria-label={link.ariaLabel}
             key={link._id}
-            className=" text-primary-content text-nav capitalize link-hover"
+            className=" text-white text-nav capitalize link-hover"
           >
             {link.text}
           </Link>

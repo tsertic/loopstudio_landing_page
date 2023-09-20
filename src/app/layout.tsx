@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Alata, Josefin_Sans } from "next/font/google";
 import { Footer } from "@/components/layout/Footer/Footer";
+import { ThemeProviderC } from "@/components/provider/ThemeProvider";
 
 const alata = Alata({
   subsets: ["latin"],
@@ -30,9 +31,11 @@ export default function RootLayout({
       <body
         className={`${alata.variable} ${josefinSans.variable} text-bodyM font-alata bg-base-100 text-base-content`}
       >
-        <Navigation />
-        {children}
-        <Footer />
+        <ThemeProviderC>
+          <Navigation />
+          {children}
+          <Footer />
+        </ThemeProviderC>
       </body>
     </html>
   );

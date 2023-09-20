@@ -10,7 +10,7 @@
 }
 
 :root[class~="dark"] {
-  --color-base-100: 0 0 0;
+  --color-base-100: 45 45 45;
   --color-base-content: 255 255 255;
 
   --color-primary: 255 255 255;

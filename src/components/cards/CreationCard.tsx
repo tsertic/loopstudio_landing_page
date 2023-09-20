@@ -21,7 +21,7 @@ export const CreationCard: React.FC<ICreationCard> = ({ cardData }) => {
         alt={cardData.text}
         className="w-full h-full md:hidden object-cover"
       />
-      <h3 className="absolute bottom-[32px] left-[40px] text-headingMMobile md:text-headingM uppercase text-white max-w-[165px] group-hover:text-black">
+      <h3 className="absolute bottom-[32px] left-[40px] text-headingMMobile md:text-headingM uppercase text-white max-w-[165px] group-hover:text-base-content">
         {cardData.text}
       </h3>
     </div>

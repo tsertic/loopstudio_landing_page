@@ -9,7 +9,7 @@ export const Footer = () => {
       <div className="container-wide flex flex-col max-md:gap-[48px] md:flex-row md:justify-between max-md:px-[51px] ">
         <div>
           <div className="mb-[32px] md:mb-[24px] flex w-full max-md:justify-center">
-            <Logo width={144} height={24} dark={false} />
+            <Logo width={144} height={24} className="fill-primary-content" />
           </div>
           <FooterNav />
         </div>

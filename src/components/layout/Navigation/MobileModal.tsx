@@ -18,7 +18,7 @@ export const MobileModal: React.FC<IMobileModal> = ({
       } fixed left-0 h-screen w-screen bg-primary  transition-all duration-300`}
     >
       <div className="absolute top-[40px] container-wide flex justify-between z-40 items-center  ">
-        <Logo width={192} height={32} dark={false} />
+        <Logo width={192} height={32} className="fill-primary-content" />
         <div onClick={closeModal} className="cursor-pointer">
           {" "}
           <Icons iconName="close" className="w-[20px] h-[20px] fill-base-100" />

@@ -2,14 +2,16 @@ import React from "react";
 interface ILogo {
   width: number;
   height: number;
-  dark: boolean;
+
+  className: string;
 }
-export const Logo: React.FC<ILogo> = ({ width, height, dark }) => {
+export const Logo: React.FC<ILogo> = ({ width, height, className }) => {
+  const styles = className;
   return (
     <svg
       width={width}
       height={height}
-      className={`${dark ? "fill-primary" : "fill-base-100"}`}
+      className={styles}
       viewBox="0 0 192 32"
       xmlns="http://www.w3.org/2000/svg"
     >
