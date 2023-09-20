@@ -28,6 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
+(if Missing - wait 3-5 seconds for it to load 🙂)
+
 ![](./screenshot.gif)
 
 ### PageSpeed Insights Report
