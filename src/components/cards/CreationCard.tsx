@@ -6,13 +6,13 @@ interface ICreationCard {
 }
 export const CreationCard: React.FC<ICreationCard> = ({ cardData }) => {
   return (
-    <div className="w-full h-[120px] md:max-w-[254px] md:h-[450px]  relative group cursor-pointer">
+    <div className="w-full h-[120px] md:max-w-[254px] md:h-[450px]  relative group cursor-pointer ">
       <Image
         src={cardData.imgUrlDesktop}
         height={450}
         width={254}
         alt={cardData.text}
-        className="w-full h-full hidden md:block group-hover:opacity-30"
+        className="w-full h-full hidden md:block group-hover:opacity-30 transition-universal"
       />
       <Image
         src={cardData.imgUrlMobile}
@@ -21,7 +21,7 @@ export const CreationCard: React.FC<ICreationCard> = ({ cardData }) => {
         alt={cardData.text}
         className="w-full h-full md:hidden object-cover"
       />
-      <h3 className="absolute bottom-[32px] left-[40px] text-headingMMobile md:text-headingM uppercase text-white max-w-[165px] group-hover:text-base-content">
+      <h3 className="absolute bottom-[32px] left-[40px] text-headingMMobile md:text-headingM uppercase text-white max-w-[165px] group-hover:text-base-content transition-universal">
         {cardData.text}
       </h3>
     </div>
