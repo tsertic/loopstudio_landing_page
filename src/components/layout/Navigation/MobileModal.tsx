@@ -1,5 +1,6 @@
 import { Icons } from "@/components/UI/Icons";
 import { Logo } from "@/components/UI/Logo";
+import ThemeSwitch from "@/components/UI/ThemeSwitch";
 import { NAV_LINKS } from "@/constants";
 import Link from "next/link";
 import React from "react";
@@ -39,6 +40,9 @@ export const MobileModal: React.FC<IMobileModal> = ({
           );
         })}
       </nav>
+      <div className="bg-white/80 rounded-[20px] absolute bottom-[20px] left-[20px] z-[40]">
+        <ThemeSwitch />
+      </div>
     </div>
   );
 };

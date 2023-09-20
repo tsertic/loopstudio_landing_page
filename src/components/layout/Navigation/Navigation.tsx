@@ -22,7 +22,6 @@ export const Navigation = () => {
   }, []);
   return (
     <>
-      <ThemeSwitch />
       <header
         className={`fixed w-full z-[20] ${
           isScrolled
@@ -45,7 +44,12 @@ export const Navigation = () => {
               } transition-universal`}
             />
           </div>
-          <DesktopLinksList />
+          <div className="flex gap-[20px] items-center max-md:hidden">
+            <DesktopLinksList />
+
+            <ThemeSwitch />
+          </div>
+
           <div
             className="md:hidden cursor-pointer"
             onClick={() => setShowNavM(!showNavM)}

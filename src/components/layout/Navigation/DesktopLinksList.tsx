@@ -4,7 +4,7 @@ import React from "react";
 
 export const DesktopLinksList = () => {
   return (
-    <nav className="flex max-md:hidden gap-[32px] justify-between">
+    <nav className="flex  gap-[32px] justify-between">
       {NAV_LINKS.map((link) => {
         return (
           <Link
