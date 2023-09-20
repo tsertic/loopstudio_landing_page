@@ -10,7 +10,7 @@ export const CreationCard: React.FC<ICreationCard> = ({ cardData }) => {
       <Image
         src={cardData.imgUrlDesktop}
         height={450}
-        width={250}
+        width={254}
         alt={cardData.text}
         className="w-full h-full hidden md:block group-hover:opacity-30"
       />
