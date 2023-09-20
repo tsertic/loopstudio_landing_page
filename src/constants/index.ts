@@ -1,3 +1,5 @@
+import { ISocialIconItem } from "@/types/index.t";
+
 export const NAV_LINKS = [
   {
     _id: "0",
@@ -63,7 +65,7 @@ export const FOOTER_LINKS = [
   },
 ];
 
-export const SOCIAL_ICONS = [
+export const SOCIAL_ICONS: ISocialIconItem[] = [
   {
     _id: "0",
     path: "/",
@@ -79,7 +81,7 @@ export const SOCIAL_ICONS = [
   {
     _id: "2",
     path: "/",
-    iconName: "pintrest",
+    iconName: "pinterest",
     ariaLabel: "pintrest",
   },
   {

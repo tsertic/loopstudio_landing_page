@@ -10,6 +10,7 @@ export const Logo: React.FC<ILogo> = ({ width, height, dark }) => {
       width={width}
       height={height}
       className={`${dark ? "fill-primary" : "fill-base-100"}`}
+      viewBox="0 0 192 32"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
