@@ -6,6 +6,7 @@ import { Icons } from "@/components/UI/Icons";
 import { MobileModal } from "./MobileModal";
 import { DesktopLinksList } from "./DesktopLinksList";
 import ThemeSwitch from "@/components/UI/ThemeSwitch";
+import Link from "next/link";
 
 export const Navigation = () => {
   const [showNavM, setShowNavM] = useState(false);
@@ -35,7 +36,7 @@ export const Navigation = () => {
         <div
           className={`container-wide flex justify-between items-center z-[20] relative`}
         >
-          <div>
+          <Link href="/" aria-label="homepage">
             <Logo
               width={192}
               height={32}
@@ -43,19 +44,19 @@ export const Navigation = () => {
                 isScrolled && "w-[132px] h-[24px]"
               } transition-universal`}
             />
-          </div>
+          </Link>
           <div className="flex gap-[20px] items-center max-md:hidden">
             <DesktopLinksList />
 
             <ThemeSwitch />
           </div>
 
-          <div
+          <button
             className="md:hidden cursor-pointer"
             onClick={() => setShowNavM(!showNavM)}
           >
             <Icons iconName="hamburger" className="w-[24px] fill-white" />
-          </div>
+          </button>
         </div>
       </header>
       <MobileModal closeModal={() => setShowNavM(false)} showModal={showNavM} />

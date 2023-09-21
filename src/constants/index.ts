@@ -5,31 +5,31 @@ export const NAV_LINKS = [
     _id: "0",
     text: "about",
     path: "/",
-    ariaLabel: "About page",
+    ariaLabel: "about",
   },
   {
     _id: "1",
     text: "careers",
     path: "/",
-    ariaLabel: "careers page",
+    ariaLabel: "careers",
   },
   {
     _id: "2",
     text: "events",
     path: "/",
-    ariaLabel: "events page",
+    ariaLabel: "events",
   },
   {
     _id: "3",
     text: "products",
     path: "/",
-    ariaLabel: "products page",
+    ariaLabel: "products",
   },
   {
     _id: "4",
     text: "support",
     path: "/",
-    ariaLabel: "support page",
+    ariaLabel: "support",
   },
 ];
 export const FOOTER_LINKS = [
@@ -37,31 +37,31 @@ export const FOOTER_LINKS = [
     _id: "0",
     text: "about",
     path: "/",
-    ariaLabel: "About page",
+    ariaLabel: "About",
   },
   {
     _id: "1",
     text: "careers",
     path: "/",
-    ariaLabel: "careers page",
+    ariaLabel: "careers",
   },
   {
     _id: "2",
     text: "events",
     path: "/",
-    ariaLabel: "events page",
+    ariaLabel: "events",
   },
   {
     _id: "3",
     text: "products",
     path: "/",
-    ariaLabel: "products page",
+    ariaLabel: "products",
   },
   {
     _id: "4",
     text: "support",
     path: "/",
-    ariaLabel: "support page",
+    ariaLabel: "support",
   },
 ];
 
