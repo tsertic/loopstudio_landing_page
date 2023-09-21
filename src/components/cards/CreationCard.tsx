@@ -7,7 +7,7 @@ interface ICreationCard {
 export const CreationCard: React.FC<ICreationCard> = ({ cardData }) => {
   return (
     <div className="relative  w-full h-[120px] md:max-w-[254px] md:h-[450px] group cursor-pointer ">
-      <div className="absolute w-[100%] h-[100%] top-0 left-0 bg-black/20 z-10"></div>
+      <div className="absolute w-[100%] h-[100%] top-0 left-0 bg-gradient-to-b from-black/0 to-black/50 z-10"></div>
       <Image
         src={cardData.imgUrlDesktop}
         height={450}
