@@ -1,7 +1,8 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import { AriaDescText } from "./AriaDescText";
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false);
@@ -30,11 +31,12 @@ const ThemeSwitch = () => {
     theme === "dark" ? setTheme("light") : setTheme("dark");
   };
   return (
-    <div
+    <button
       className={` flex min-w-[60px]   z-[10] rounded-[15px] border-2 p-[2px] border-white/40 gap-[10px] cursor-pointer transition-universal`}
       onClick={toggleThemeHandler}
     >
-      <div>
+      <AriaDescText>Toggle theme</AriaDescText>
+      <div aria-hidden="true">
         <Image
           width={24}
           height={24}
@@ -43,9 +45,10 @@ const ThemeSwitch = () => {
           className={` transition-universal ${
             theme === "dark" ? "translate-x-[25px] rotate-180" : "translate-x-0"
           }`}
+          loading="eager"
         />
       </div>
-    </div>
+    </button>
   );
 };
 

@@ -7,6 +7,7 @@ import { MobileModal } from "./MobileModal";
 import { DesktopLinksList } from "./DesktopLinksList";
 import ThemeSwitch from "@/components/UI/ThemeSwitch";
 import Link from "next/link";
+import { AriaDescText } from "@/components/UI/AriaDescText";
 
 export const Navigation = () => {
   const [showNavM, setShowNavM] = useState(false);
@@ -55,6 +56,7 @@ export const Navigation = () => {
             className="md:hidden cursor-pointer"
             onClick={() => setShowNavM(!showNavM)}
           >
+            <AriaDescText>Open menu</AriaDescText>
             <Icons iconName="hamburger" className="w-[24px] fill-white" />
           </button>
         </div>

@@ -1,3 +1,4 @@
+import { AriaDescText } from "@/components/UI/AriaDescText";
 import { Icons } from "@/components/UI/Icons";
 import { Logo } from "@/components/UI/Logo";
 import ThemeSwitch from "@/components/UI/ThemeSwitch";
@@ -22,11 +23,8 @@ export const MobileModal: React.FC<IMobileModal> = ({
         <Link href="/" aria-label="homepage">
           <Logo width={192} height={32} className="fill-primary-content" />
         </Link>
-        <button
-          onClick={closeModal}
-          className="cursor-pointer "
-          aria-label="close navigation"
-        >
+        <button onClick={closeModal} className="cursor-pointer relative ">
+          <AriaDescText>close menu</AriaDescText>
           <Icons iconName="close" className="w-[20px] h-[20px] fill-base-100" />
         </button>
       </div>
@@ -48,10 +46,7 @@ export const MobileModal: React.FC<IMobileModal> = ({
           })}
         </ul>
       </nav>
-      <div
-        className="bg-white/80 rounded-[20px] absolute bottom-[20px] left-[20px] z-[40]"
-        role="theme switch container"
-      >
+      <div className="bg-white/80 rounded-[20px] absolute bottom-[20px] left-[20px] z-[40]">
         <ThemeSwitch />
       </div>
     </div>
