@@ -4,7 +4,7 @@ import React from "react";
 
 export const FooterNav = () => {
   return (
-    <nav id="footer-navigation">
+    <nav id="footer-navigation" aria-label="footer">
       <ul className="flex gap-[16px] md:gap-[32px] flex-col md:flex-row items-center md:items-start">
         {FOOTER_LINKS.map((link) => {
           return (

@@ -4,7 +4,7 @@ import React from "react";
 
 export const DesktopLinksList = () => {
   return (
-    <nav id="header-navigation">
+    <nav id="header-navigation" aria-label="header">
       <ul className="flex  gap-[32px] justify-between">
         {NAV_LINKS.map((link) => {
           return (
