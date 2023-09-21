@@ -4,7 +4,7 @@ import React from "react";
 
 export const DesktopLinksList = () => {
   return (
-    <nav role="main navigation">
+    <nav id="header-navigation" role="navigation">
       <ul className="flex  gap-[32px] justify-between">
         {NAV_LINKS.map((link) => {
           return (

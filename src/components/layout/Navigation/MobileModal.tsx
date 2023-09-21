@@ -22,11 +22,15 @@ export const MobileModal: React.FC<IMobileModal> = ({
         <Link href="/" aria-label="homepage">
           <Logo width={192} height={32} className="fill-primary-content" />
         </Link>
-        <button onClick={closeModal} className="cursor-pointer ">
+        <button
+          onClick={closeModal}
+          className="cursor-pointer "
+          aria-label="close navigation"
+        >
           <Icons iconName="close" className="w-[20px] h-[20px] fill-base-100" />
         </button>
       </div>
-      <nav className="h-full ">
+      <nav id="header-mobile-navigation" className="h-full " role="navigation">
         <ul className=" h-full pl-[24px] flex flex-col  items-start justify-center gap-[24px]">
           {NAV_LINKS.map((link) => {
             return (
