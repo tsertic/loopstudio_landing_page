@@ -10,6 +10,7 @@ export const Hero = () => {
           height={650}
           alt="hero image"
           className="w-full h-full"
+          loading="eager"
         />
       </div>
       <div className="max-md:hidden absolute top-0 left-0 bottom-0 right-0 z-[-1]">
@@ -19,6 +20,7 @@ export const Hero = () => {
           height={650}
           alt="hero image"
           className="w-full h-full"
+          loading="eager"
         />
       </div>
       <div className="container-wide">

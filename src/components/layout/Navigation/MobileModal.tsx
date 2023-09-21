@@ -44,7 +44,10 @@ export const MobileModal: React.FC<IMobileModal> = ({
           })}
         </ul>
       </nav>
-      <div className="bg-white/80 rounded-[20px] absolute bottom-[20px] left-[20px] z-[40]">
+      <div
+        className="bg-white/80 rounded-[20px] absolute bottom-[20px] left-[20px] z-[40]"
+        role="theme switch container"
+      >
         <ThemeSwitch />
       </div>
     </div>
